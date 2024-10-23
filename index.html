@@ -1,253 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Profesional</title>
     <link rel="stylesheet" href="Diseño.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #5a0000;
-            margin: 0;
-            padding: 20px;
-        }
-
-        form {
-            background: rgb(228, 167, 167);
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 600px;
-            margin: auto;
-        }
-
-        fieldset {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            padding: 10px;
-        }
-
-        legend {
-            font-weight: bold;
-            padding: 0 10px;
-            color: #333;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            color: #555;
-        }
-
-        input[type="text"],
-        input[type="password"],
-        input[type="email"],
-        input[type="date"],
-        input[type="number"],
-        input[type="color"],
-        input[type="search"],
-        textarea,
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            transition: border-color 0.3s;
-        }
-
-        input[type="text"]:focus,
-        input[type="password"]:focus,
-        input[type="email"]:focus,
-        input[type="date"]:focus,
-        input[type="number"]:focus,
-        input[type="color"]:focus,
-        input[type="search"]:focus,
-        textarea:focus,
-        select:focus {
-            border-color: #4caf50;
-            outline: none;
-        }
-
-        input[type="radio"],
-        input[type="checkbox"] {
-            margin-right: 5px;
-        }
-
-        input[type="range"] {
-            appearance: none; /* Cambiado a 'appearance' */
-            width: 100%;
-            height: 8px;
-            border-radius: 5px;
-            background: #ccc;
-            outline: none;
-            opacity: 0.7;
-            transition: opacity .2s;
-        }
-
-        input[type="range"]:hover {
-            opacity: 1;
-        }
-
-        input[type="range"]::-webkit-slider-thumb {
-            appearance: none; /* Cambiado a 'appearance' */
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background: #ce142d;
-            cursor: pointer;
-        }
-
-        input[type="submit"] {
-            background: #ec1010;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background 0.3s;
-            width: 100%;
-        }
-
-        input[type="submit"]:hover {
-            background: #ce142d;
-        }
-    </style>
+    <title>Inicio de Sesión</title>
 </head>
 <body>
-    <form action="" method="GET"> 
-        <fieldset>
-            <legend>Datos Generales</legend>
-            <label for="Nombre">Nombre:</label>
-            <input type="text" id="Nombre" name="Nombre" placeholder="Escribe tu Nombre"> 
-            <label>Contraseña:</label>
-            <input type="password" size="10" maxlength="10" placeholder="Escribe tu Contraseña">
-            <label>Correo Electrónico:</label>
-            <input type="email" placeholder="Escribe tu Correo Electrónico"> 
-            <fieldset>
-                <legend>Sexo:</legend>
-                <label><input type="radio" name="Sexo" checked> Masculino</label>
-                <label><input type="radio" name="Sexo"> Femenino</label>
-            </fieldset>
-            <label>Fecha de Nacimiento</label>
-            <input type="date">
-        </fieldset>
-
-        <fieldset>
-            <legend>Dirección</legend>
-            <label>Calle: </label>
-            <input type="text" placeholder="Escribe tu Calle"> 
-            <label>Número:</label>
-            <input type="number" min="0" max="5" placeholder="Número"> 
-            <label>Municipio:</label>
-            <select name="Municipio" style="max-height: 150px; overflow-y: auto;" size="1">
-                <optgroup>
-                    <option value="TUL">Tultitlan</option>
-                    <option value="ECA">Ecatepec</option>
-                    <option value="CDMX">Ciudad de México</option>
-                    <option value="GDL">Guadalajara</option>
-                    <option value="MTY">Monterrey</option>
-                    <option value="CUN">Cancún</option>
-                    <option value="QRO">Querétaro</option>
-                    <option value="TLA">Tlalnepantla</option>
-                    <option value="MOR">Morelia</option>
-                    <option value="PUE">Puebla</option>
-                    <option value="MER">Mérida</option>
-                    <option value="LEO">León</option>
-                    <option value="TOL">Toluca</option>
-                    <option value="CUU">Chihuahua</option>
-                    <option value="TIJ">Tijuana</option>
-                    <option value="CUL">Culiacán</option>
-                    <option value="HMO">Hermosillo</option>
-                    <option value="TAP">Tapachula</option>
-                    <option value="VER">Veracruz</option>
-                    <option value="SLP">San Luis Potosí</option>
-                    <option value="OAX">Oaxaca</option>
-                    <option value="TUX">Tuxtla Gutiérrez</option>
-                    <option value="VIC">Ciudad Victoria</option>
-                    <option value="MZT">Mazatlán</option>
-                    <option value="REY">Reynosa</option>
-                    <option value="AGU">Aguascalientes</option>
-                    <option value="TOR">Torreón</option>
-                    <option value="SAL">Saltillo</option>
-                    <option value="ZAC">Zacatecas</option>
-                    <option value="ENS">Ensenada</option>
-                    <option value="COL">Colima</option>
-                    <option value="CAB">Cabo San Lucas</option>
-                    <option value="LAP">La Paz</option>
-                    <option value="CAM">Campeche</option>
-                    <option value="GUA">Guanajuato</option>
-                    <option value="TLAX">Tlaxcala</option>
-                    <option value="CHET">Chetumal</option>
-                    <option value="IZT">Iztapalapa</option>
-                    <option value="NEZ">Nezahualcóyotl</option>
-                    <option value="COA">Coatzacoalcos</option>
-                    <option value="LAG">Lagos de Moreno</option>
-                    <option value="ZAM">Zamora</option>
-                    <option value="URU">Uruapan</option>
-                    <option value="APA">Apatzingán</option>
-                    <option value="ATL">Atlixco</option>
-                    <option value="TEP">Tepic</option>
-                    <option value="JUA">Ciudad Juárez</option>
-                    <option value="VIL">Villahermosa</option>
-                    <option value="DEL">Delicias</option>
-                    <option value="MOR">Cuernavaca</option>
-                    <option value="LAZ">Lázaro Cárdenas</option>
-                    <option value="IXT">Ixtapaluca</option>
-                    <option value="MAT">Matamoros</option>
-                    <option value="CARM">Ciudad del Carmen</option>
-                </optgroup>
-            </select>
-        </fieldset>
-
-        <fieldset>
-            <legend>Otros</legend>
-            <label>Comentarios</label>
-            <textarea name="Comentarios" cols="10" rows="5" placeholder="Escribe tus comentarios..."></textarea>
-            <label>Color</label>
-            <input type="color">
-            <label>Rango de Números</label>
-            <input type="range" min="0" max="8" id="rangoNumeros">
-            <label>Buscar</label>
-            <input type="search" placeholder="Buscar...">
-        </fieldset>
-
-        <fieldset>
-            <legend>Encuesta</legend>
-            <label>Selecciona tus gustos:</label> <br>
-            <label><input type="checkbox"> Rock</label>
-            <label><input type="checkbox"> Pop</label>
-            <label><input type="checkbox"> Balada</label> <br>        
-        </fieldset>
-
-        <input type="submit" value="Enviar">
-    </form> 
-
-    <script>
-        const rangoNumeros = document.getElementById("rangoNumeros");
-
-        // Cambiar el estilo del fondo de la barra según la posición del cursor
-        rangoNumeros.addEventListener('mousemove', function(event) {
-            const rect = this.getBoundingClientRect();
-            const x = event.clientX - rect.left; // Posición del cursor en relación a la barra
-            const width = rect.width;
-            let value = (x / width) * (this.max - this.min); // Calcular el valor basado en la posición del cursor
-
-            if (value < 0) value = 0;
-            if (value > this.max) value = this.max;
-
-            this.value = value;
-
-            // Actualizar el fondo de la barra
-            this.style.background = `linear-gradient(to right, #ce142d ${value / this.max * 100}%, #ccc ${value / this.max * 100}%)`;
-        });
-
-        // Para inicializar el color de fondo de la barra al cargar
-        rangoNumeros.dispatchEvent(new Event('mousemove'));
-    </script>
+    <div class="container">
+        <h2>Iniciar Sesión</h2>
+        <form action="Conexion.php" method="POST">
+            <div class="input-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="input-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+            <input type="hidden" name="accion" value="iniciar_sesion">
+        </form>
+        <p>¿No tienes una cuenta? <a href="registro.html">Registrate</a></p>
+    </div>
 </body>
 </html>
